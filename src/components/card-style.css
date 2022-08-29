@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+p::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.card-container {
+    /* Style */
+    background-color: white;
+    width: 40rem;
+    height: 17rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.24);
+    /* Content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.quotes {
+    /* Style 
+    background-color: lightblue;*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* Content */
+    width: 100%;
+    height: 8rem;
+}
+
+.quotes>svg {
+    min-width: 5rem;
+    max-width: 5rem;
+}
+
+.quotes>p {
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    height: 8rem;
+    font-size: 1.3rem;
+    overflow-y: scroll;
+}
+
+.next {
+    /* Style */
+    background-color: green;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    /* Content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next > svg {
+    min-width: 1.3rem;
+    max-width: 1.3rem;
+}
