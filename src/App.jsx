@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Card from './components/Card'
-import './App.css'
 import colors from './components/colors.json'
+import './App.css'
 
 function App() {
   let randomizedColor = colors[Math.floor(Math.random() * colors.length)]
@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Card actualColor = {actualColor} changeColor = {changeColor}/>
+      <p className="credits">Done by Michael A. Decena</p>
     </div>
   )
 }
